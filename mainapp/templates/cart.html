@@ -1,7 +1,15 @@
 {% extends 'base.html' %}
 
 {% block content %}
-<h3 class="text-center mt-5 mb-5"> Ваша корзина {% if not cart.products.count %} пусто {% endif %}</h3>
+<h3 class="text-center mt-5 mb-5"> Ваша корзина {% if not cart.products.count %} пустa {% endif %}</h3>
+{% if messages %}
+    {% for message in messages %}
+      <div class="alert alert-success" role="alert">
+        <h4 class="alert-heading">{{ message }}</h4>
+      </div>
+    {% endfor %}
+{% endif %}
+{% if cart.products.count %}
 <table class="table">
   <thead>
     <tr>
@@ -10,6 +18,7 @@
       <th scope="col">Цена</th>
       <th scope="col">Количество</th>
         <th scope="col">Общая цена</th>
+      <th scope="col">Действие</th>
     </tr>
   </thead>
   <tbody>
@@ -18,8 +27,18 @@
           <th scope="row">{{ item.content_object.title }}</th>
           <td class="w-25"><img src="{{ item.content_object.image.url }}" class="img-fluid"</td>
           <td>{{ item.content_object.price }} BYN</td>
-          <td>{{ item.qty }}</td>
+          <td>
+            <form action="{% url 'change_qty' ct_model=item.content_object.get_model_name slug=item.content_object.slug %}" method="POST">
+              {% csrf_token %}
+              <input type="number" class="form-control" name="qty" style="width: 70px" min=1 value="{{ item.qty }}">
+              <br>
+              <input type="submit" class="btn btn-primary" value="Изменить количество">
+            </form>
+          </td>
             <td>{{ item.final_price }} BYN</td>
+          <td>
+            <a href="{% url 'delete_from_cart' ct_model=item.content_object.get_model_name slug=item.content_object.slug %}"><button class="btn btn-danger">Удалить из корзины</button></a>
+          </td>
         </tr>
     {% endfor %}
         <tr>
@@ -30,5 +49,5 @@
         </tr>
   </tbody>
 </table>
-
+{% endif %}
 {% endblock content %}

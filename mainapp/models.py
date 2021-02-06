@@ -97,6 +97,9 @@ class Product(models.Model):
     def __str__(self):
         return self.title
 
+    def get_model_name(self):
+        return self.__class__.__name__.lower()
+
 class Notebook(Product):
 
     diagonal = models.CharField(max_length=255, verbose_name='Диагональ')
@@ -111,6 +114,8 @@ class Notebook(Product):
 
     def get_absolute_url(self):
         return get_product_url(self, 'product_detail')
+
+
 
 class Smartphone(Product):
 
@@ -133,6 +138,7 @@ class Smartphone(Product):
         return get_product_url(self, 'product_detail')
 
 
+
 class CartProduct(models.Model):
 
     user = models.ForeignKey('Customer',verbose_name='Покупатель', on_delete=models.CASCADE)
@@ -150,6 +156,7 @@ class CartProduct(models.Model):
         self.final_price = self.qty * self.content_object.price
         super().save(*args, **kwargs)
 
+
 class Cart(models.Model):
 
     owner = models.ForeignKey('Customer', null=True, verbose_name='Владелец', on_delete=models.CASCADE)
@@ -164,7 +171,6 @@ class Cart(models.Model):
 
     def save(self, *args, **kwargs):
         cart_data = self.products.aggregate(models.Sum('final_price'), models.Count('id'))
-        print(cart_data)
         if cart_data.get('final_price__sum'):
             self.final_price = cart_data['final_price__sum']
         else:
