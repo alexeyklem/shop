@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="29c9609a-6570-4f44-a58d-df971e22a371" name="Default Changelist" comment="update">
+      <change beforePath="$PROJECT_DIR$/shop/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/shop/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop/mainapp/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/shop/mainapp/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop/mainapp/mixins.py" beforeDir="false" afterPath="$PROJECT_DIR$/shop/mainapp/mixins.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop/mainapp/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/shop/mainapp/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop/mainapp/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/shop/mainapp/templates/base.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop/mainapp/templates/product_detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/shop/mainapp/templates/product_detail.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop/mainapp/templatetags/specifications.py" beforeDir="false" afterPath="$PROJECT_DIR$/shop/mainapp/templatetags/specifications.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop/mainapp/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/shop/mainapp/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop/mainapp/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/shop/mainapp/views.py" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$/shop" value="master" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/shop" />
+    <option name="UPDATE_TYPE" value="REBASE" />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
+  </component>
+  <component name="ProjectId" id="1nZ9FuOIeWg0sedzjWzJbxK2Bv3" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/shop" />
+    <property name="settings.editor.selected.configurable" value="org.jetbrains.plugins.github.ui.GithubSettingsConfigurable" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\User\product\shop\shop" />
+      <recent name="C:\Users\User\product\shop\shop\mainapp" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="shop" type="PythonConfigurationType" factoryName="Python">
+      <module name="shop" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="C:\Users\User\AppData\Local\Microsoft\WindowsApps\python3.8.exe" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/shop" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/shop/manage.py" />
+      <option name="PARAMETERS" value="runserver" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="29c9609a-6570-4f44-a58d-df971e22a371" name="Default Changelist" comment="" />
+      <created>1611586646825</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1611586646825</updated>
+      <workItem from="1611586651614" duration="18151000" />
+      <workItem from="1611767064756" duration="581000" />
+      <workItem from="1611851850114" duration="3257000" />
+      <workItem from="1611857769467" duration="145000" />
+      <workItem from="1611863507793" duration="3595000" />
+      <workItem from="1612005020376" duration="10084000" />
+      <workItem from="1612086008659" duration="5046000" />
+      <workItem from="1612117784322" duration="4893000" />
+      <workItem from="1612196380531" duration="5147000" />
+      <workItem from="1612282868049" duration="4148000" />
+      <workItem from="1612369936267" duration="1353000" />
+      <workItem from="1612373226753" duration="5868000" />
+      <workItem from="1612453109821" duration="6855000" />
+      <workItem from="1612614149349" duration="20312000" />
+      <workItem from="1612720167134" duration="10511000" />
+      <workItem from="1612799811425" duration="3252000" />
+      <workItem from="1612803369755" duration="201000" />
+      <workItem from="1612804167879" duration="10438000" />
+    </task>
+    <task id="LOCAL-00001" summary="Initial commit">
+      <created>1612378976630</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1612378976630</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Initial commit">
+      <created>1612455931607</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1612455931607</updated>
+    </task>
+    <task id="LOCAL-00003" summary="make cart and sum all products">
+      <created>1612460218418</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1612460218418</updated>
+    </task>
+    <task id="LOCAL-00004" summary="make cart and sum all products">
+      <created>1612460227396</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1612460227396</updated>
+    </task>
+    <task id="LOCAL-00005" summary="delete and add product with cart">
+      <created>1612629830534</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1612629830550</updated>
+    </task>
+    <task id="LOCAL-00006" summary="make forms for cart and add ib cart product">
+      <created>1612645769816</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1612645769816</updated>
+    </task>
+    <task id="LOCAL-00007" summary="make forms for cart and add ib cart product">
+      <created>1612645777664</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1612645777664</updated>
+    </task>
+    <task id="LOCAL-00008" summary="make order and test">
+      <created>1612730356236</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1612730356236</updated>
+    </task>
+    <task id="LOCAL-00009" summary="add config ci">
+      <created>1612730650457</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1612730650457</updated>
+    </task>
+    <task id="LOCAL-00010" summary="update">
+      <created>1612801992146</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1612801992147</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Initial commit" />
+    <MESSAGE value="make cart and sum all products" />
+    <MESSAGE value="delete and add product with cart" />
+    <MESSAGE value="make forms for cart and add ib cart product" />
+    <MESSAGE value="make order and test" />
+    <MESSAGE value="add config ci" />
+    <MESSAGE value="update" />
+    <option name="LAST_COMMIT_MESSAGE" value="update" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/main.py</url>
+          <line>8</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/shop$manage.coverage" NAME="manage Coverage Results" MODIFIED="1611603883187" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/shop" />
+    <SUITE FILE_PATH="coverage/shop$shop.coverage" NAME="shop Coverage Results" MODIFIED="1612803101697" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/shop" />
+  </component>
+</project>
