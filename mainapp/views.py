@@ -100,7 +100,7 @@ class CartView(CartMixin, View):
         categories = Category.objects.all()
         context = {
             'cart': self.cart,
-            'categories': categories,
+            'categories': categories
         }
         return render(request, 'cart.html', context)
 
