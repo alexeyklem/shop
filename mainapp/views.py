@@ -11,7 +11,7 @@ from .forms import OrderForm, LoginForm, RegistrationForm
 from .utils import recalc_cart
 
 
-class BaseView(CartMixin,View):
+class BaseView(CartMixin, View):
 
     def get(self, request, *args, **kwargs):
         categories = Category.objects.all()
@@ -25,6 +25,8 @@ class BaseView(CartMixin,View):
 
 class ProductDetailView(CartMixin, DetailView):
 
+    model = Product
+    queryset = Product.objects.all()
     context_object_name = 'product'
     template_name = 'product_detail.html'
     slug_url_kwarg = 'slug'
