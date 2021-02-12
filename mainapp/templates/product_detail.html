@@ -1,5 +1,5 @@
 {% extends 'base.html' %}
-{% load specifications %}
+
 {% block content %}
 <nav aria-label="breadcrumb" class="mt-3">
   <ol class="breadcrumb">
@@ -17,15 +17,8 @@
         <p>Цена: {{ product.price }} BYN </p>
         <p>Описание: {{ product.description }}</p>
         <hr>
-        <a href="{% url 'add_to_cart' ct_model=ct_model slug=product.slug %}"><button class="btn btn-danger">Добавить в корзину</button></a>
+        <a href="{% url 'add_to_cart' slug=product.slug %}"><button class="btn btn-danger">Добавить в корзину</button></a>
     </div>
-    <p class="mt-4">Характеристики:</p>
-
-    {% if product.category.slug == 'notebooks' %}
-        {% include 'notebook_specification.html' %}
-    {% else %}
-        {% include 'smartphone_specification.html' %}
-    {% endif %}
 
 </div>
 

@@ -17,7 +17,7 @@ class ShopTestCases(TestCase):
     def setUp(self) -> None:
         self.user = User.objects.create(username='testuser', password='password')
         self.category = Category.objects.create(name='Ноутбуки', slug='notebooks')
-        image = SimpleUploadedFile('notebook_image.jpg', content=b'', content_type="image/jpg")
+        image = SimpleUploadedFile('notebook_image.jpg', content=b'', product="image/jpg")
         self.notebook = Notebook.objects.create(
             category=self.category,
             title="Test Notebook",
@@ -36,7 +36,7 @@ class ShopTestCases(TestCase):
         self.cart_product = CartProduct.objects.create(
             user=self.customer,
             cart=self.cart,
-            content_object=self.notebook
+            product=self.notebook
         )
     def test_add_to_cart(self):
         self.cart.products.add(self.cart_product)
