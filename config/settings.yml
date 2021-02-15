@@ -24,7 +24,7 @@ default:
   WEB_CONCURRENCY: 0
 
 heroku:
-  HOST: "alexeyklemshop.herokuapp.com"
+  HOST: "shopfortms.herokuapp.com"
   MODE_DEBUG: false
   REQUEST_TTL: 10
   VENV_SYNTHETIC: true
