@@ -105,7 +105,7 @@ class ProductFeatureValidators(models.Model): #------ что б не вводи�
 
 class CartProduct(models.Model):
 
-    user = models.ForeignKey('Customer', verbose_name='Покупатель', on_delete=models.CASCADE)
+    user = models.ForeignKey('Customer', verbose_name='Покупатель', blank=True, null=True, on_delete=models.CASCADE)
     cart = models.ForeignKey('Cart', verbose_name='Корзина', on_delete=models.CASCADE, related_name='related_products')
     product = models.ForeignKey(Product, verbose_name='Товар', on_delete=models.CASCADE)
     qty = models.PositiveIntegerField(default=1)
@@ -121,7 +121,7 @@ class CartProduct(models.Model):
 
 class Cart(models.Model):
 
-    owner = models.ForeignKey('Customer', null=True, verbose_name='Владелец', on_delete=models.CASCADE)
+    owner = models.ForeignKey('Customer', null=True, blank=True, verbose_name='Владелец', on_delete=models.CASCADE)
     products = models.ManyToManyField(CartProduct, blank=True, related_name='related_cart',)
     total_products = models.PositiveIntegerField(default=0)
     final_price = models.DecimalField(max_digits=9, default=0, decimal_places=2, verbose_name='Общая цена')
@@ -134,7 +134,7 @@ class Cart(models.Model):
 
 class Customer(models.Model):
 
-    user = models.ForeignKey(User, verbose_name='Пользователь', on_delete=models.CASCADE)
+    user = models.ForeignKey(User, verbose_name='Пользователь', null=True, blank=True, on_delete=models.CASCADE)
     phone = models.CharField(max_length=20, verbose_name='Номер телефона', null=True, blank=True)
     address = models.CharField(max_length=255, verbose_name='Адрес', null=True, blank=True)
     orders = models.ManyToManyField('Order', verbose_name='Заказы покупателя', related_name='related_customer')
@@ -165,7 +165,7 @@ class Order(models.Model):
         (BYING_TYPE_DELIVERY, 'Доставка'),
     )
 
-    customer = models.ForeignKey(Customer, verbose_name='Покупатель', related_name='related_orders', on_delete=models.CASCADE)
+    customer = models.ForeignKey(Customer, verbose_name='Покупатель', null=True, blank=True, related_name='related_orders', on_delete=models.CASCADE)
     first_name = models.CharField(max_length=255, verbose_name='Имя')
     last_name = models.CharField(max_length=255, verbose_name='Фамилия')
     phone = models.CharField(max_length=255, verbose_name='Номер телефона')
