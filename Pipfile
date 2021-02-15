@@ -9,6 +9,7 @@ Django = "~=3.1.5"
 psycopg2-binary = "*"
 heroku = "*"
 whitenoise = "*"
+dj-database-url = "*"
 
 [dev-packages]
 

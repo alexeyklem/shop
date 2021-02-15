@@ -26,7 +26,7 @@ SECRET_KEY = '870!8zi)te&-g)ec7mwsainxjo9to#=40)v!jolt*^eppz@qst'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['shopfortms.herokuapp.com']
 
 
 # Application definition
@@ -136,7 +136,5 @@ STATICFILES_DIRS = (
 )
 
 CRISPY_TEMPLATE_PACK = 'bootstrap4'
-
-
 
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
